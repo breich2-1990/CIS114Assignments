@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="math form" />
+    <title>Homework 2 Part 2</title>
+    <script>
+      function calc() {
+        //sum, avg, product, smallest(math obj min), largest(math obj max)
+        //present error in text area if number is not entered
+        let product = 0,
+          largest = 0,
+          smallest = 0,
+          avg = 0,
+          sum = 0;
+        let num1 = parseInt(document.forms["mathForm"].elements["int1"].value);
+        let num2 = parseInt(document.forms["mathForm"].elements["int2"].value);
+        let num3 = parseInt(document.forms["mathForm"].elements["int3"].value);
+
+        if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+          document.forms["mathForm"].elements["result"].value =
+            "You did not enter the correct values.";
+        } else {
+          sum = num1 + num2 + num3;
+          product = num1 * num2 * num3;
+          avg = (num1 + num2 + num3) / 3;
+          smallest = Math.min(num1, num2, num3);
+          largest = Math.max(num1, num2, num3);
+
+          document.forms["mathForm"].elements["result"].value =
+            "The sum of the integer you entered is: " +
+            sum +
+            "\n" +
+            "The product of the integers you entered is: " +
+            product +
+            "\n" +
+            "The average of the integers you entered is: " +
+            avg +
+            "\n" +
+            "The smallest of all the integers you entered is: " +
+            smallest +
+            "\n" +
+            "The largest of all the integers you entered is: " +
+            largest +
+            "\n";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="mathForm">
+      <table>
+        <tr>
+          <td><label for="int1">First integer: </label></td>
+          <td><input type="text" name="int1" id="int1" size="12" /></td>
+        </tr>
+        <tr>
+          <td><label for="int2">Second integer: </label></td>
+          <td><input type="text" name="int2" id="int2" size="12" /></td>
+        </tr>
+        <tr>
+          <td><label for="int3">Third integer:</label></td>
+          <td><input type="text" name="int3" id="int3" size="12" /></td>
+        </tr>
+      </table>
+      <input type="button" value="Calculate" onclick="calc()" />
+      <input type="reset" value="Reset" /><br />
+      <textarea rows="10" cols="40" name="result"></textarea>
+    </form>
+
+    <br /><br />
+    <a href="hw2.html">Go Back To Homework 2</a>
+  </body>
+</html>
