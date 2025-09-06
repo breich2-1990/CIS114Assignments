@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 3 part 1: Grade Averages</title>
+    <link rel="stylesheet" href="hw3pt1.css" />
+     <script src="hw3pt1.js"></script> 
+  </head>
+  <body>
+    <h1>Student Grades</h1>
+  <table></table>
+    <form name="gradesForm">
+      <label for="hwAvg">Homework Average: </label>
+      <input type="text" name="hwAvg" id="hwAvg"><br>
+      <label for="midEx">Midterm Exam Score: </label>
+      <input type="text" name="midEx" id="midEx"><br>
+      <label for="final">Final Exam Score: </label>
+      <input type="text" name="final" id="final"><br>
+      <label for="partcpn">Participation: </label>
+      <input type="text" name="partcpn" id="partcpn"><br>
+      <input type="button" value="Submit Data" onclick="display()">
+      <input type="reset" value="Reset" onclick="location.reload()">
+      <div id="result"></div>
+    </form>
+  </body>
+</html>

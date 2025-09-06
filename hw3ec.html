@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Homework 3 Extra Credit Math Game">
+    <title>Homework 3: Extra Credit Math Game</title>
+    <link rel="stylesheet" href="hw3ec.css">
+    <script>
+    //global
+    let rand1, rand2;
+
+//my first event listener: loading random numbers at the load of the webpage
+window.addEventListener('load', function() {
+
+    rand1 = Math.floor(Math.random() * 9) + 1;
+    rand2 = Math.floor(Math.random() * 9) + 1;
+
+document.getElementById("question").textContent = "How much is " + rand1 + " times " + rand2 + "?";
+});
+
+
+function submit(){ //must display continue
+
+ let ans, result;
+
+//retrieve
+ans = parseInt(document.getElementById("answer").value);
+
+
+//calculate, display
+if (ans === (rand1*rand2)){
+ result=true; //right answer
+ document.getElementById("result").innerHTML = "Correct!";
+ showDiv();
+} else {
+ result=false; //wrong wnswer
+ document.getElementById("result").innerHTML = "Incorrect! Please try again!";
+}
+
+}
+
+/*
+A form became an issue with the onload event so I had to make my own reset function.
+*/
+function reset(){
+     document.getElementById("result").innerHTML = "";
+     document.getElementById("answer").value = "";
+
+}
+
+/*
+My no function hides my continue div and posts the goodby message.
+*/
+function no(){
+    hideDiv();
+     document.getElementById("result").innerHTML = "Thanks for playing, see you next time.";
+}
+
+/*
+function that shows my div when necessary
+*/
+function showDiv() {
+        var divElement = document.getElementById('continue');
+        divElement.style.display = 'block';
+    }
+
+/*
+function that hides my continue div when necessary
+*/
+function hideDiv(){
+    var divElement = document.getElementById('continue');
+    divElement.style.display = 'none';
+}
+
+    </script>
+</head>
+<body>
+
+
+        <table>
+            <tr><td><div class="title">Multiplication Game!</div></td></tr>
+            <tr><td><div id="question"></div></td></tr>
+            <tr><td><label for="answer">Answer: </label><input type="number" name="answer" id="answer"></td></tr>
+            <tr><td><input type="submit" value="Submit" onclick="submit()"><input type="button" value="Reset" onclick="reset()"></td></tr>
+            <tr><td><div id="result"></div></td></tr>
+            <tr><td><div id="continue">Do you want to continue?<br>
+                <input type="button" value="yes" onclick="location.reload()">
+                <input type="button" value="no" onclick="no()"></div>
+            </td></tr>
+        </table>
+
+
+</body>
+</html>

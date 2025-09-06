@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="hw3 pt commision form for an employer">
+    <title>Homework 3: Commission Table</title>
+    <link rel="stylesheet" href="hw3pt2.css" />
+     <script src="hw3pt2.js"></script> 
+</head>
+<body>
+    <form name="commForm">
+        
+            <h1>Homework 3 - Part 2</h1>
+            <div id="instruct">For each item, type the quantity sold by the seller:</div>
+            <label for="itOne">Item One: </label>
+            <input type="number" name="itOne" id="itOne"><br>
+            <label for="itTwo">Item One: </label>
+            <input type="number" name="itTwo" id="itTwo"><br>
+            <label for="itThree">Item One: </label>
+            <input type="number" name="itThree" id="itThree"><br>
+            <label for="itFour">Item One: </label>
+            <input type="number" name="itFour" id="itFour"><br>
+            <input type="button" value="Submit" onclick="calcDisplay()">
+            <input type="reset" value="Reset" onclick="location.reload()">
+
+        <table>
+            <tr><th>Item#</th><th>Price</th><th>Qty Sold</th><th>Total</th></tr>
+            <tr><td>1</td><td>$20.99</td><td><input type="text" name="oneCount" readonly></td><td><input type="text" id="oneTot" readonly></td></tr>
+            <tr><td>2</td><td>$12.75</td><td><input type="text" name="twoCount" readonly></td><td><input type="text" id="twoTot" readonly></td></tr>
+            <tr><td>3</td><td>$9.95</td><td><input type="text" name="threeCount" readonly></td><td><input type="text" id="threeTot" readonly></td></tr>
+            <tr><td>4</td><td>$35.89</td><td><input type="text" name="fourCount" readonly></td><td><input type="text" id="fourTot" readonly></td></tr>
+            <tr><td colspan="3">Total Amount Sold:</td><td><input type="text" name="tot" id="tot" readonly></td></tr>            
+            <tr><td colspan="3">Total Weekly Earnings:</td><td><input type="text" name="grandTotal" id="grandTot" readonly></td></tr>            
+        
+        
+        </table>
+    </form>
+    
+</body>
+</html>

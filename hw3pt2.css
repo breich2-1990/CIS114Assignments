@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+form {
+    background-color: beige;
+    width: 500px;
+    margin: auto;
+}
+
+#tot,
+#grandTot {
+    text-align: right;
+}
