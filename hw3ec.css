@@ -14,3 +14,7 @@ table {
 #continue {
     display: none;
 }
+
+body {
+    text-align: center;
+}
