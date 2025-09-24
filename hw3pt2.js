@@ -4,6 +4,10 @@ My display and calculate function. I used seperate if statments because if one b
 amongst them all, I needed action.
 */
 
+
+
+
+
 function calcDisplay() {
     //itOne itTwo itThree itFour
     //declare
@@ -87,3 +91,6 @@ function check(x) {
     }
 
 }
+
+document.getElementById("submit").addEventListener("click", calcDisplay);
+document.getElementById("reset").addEventListener("click", location.reload);

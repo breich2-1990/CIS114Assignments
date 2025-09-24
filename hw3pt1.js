@@ -50,3 +50,6 @@ function check(x) { //checks for valid input
 
     return result;
 }
+
+document.getElementById("submit").addEventListener("click", display);
+document.getElementById("reset").addEventListener("click", location.reload);

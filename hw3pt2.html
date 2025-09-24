@@ -5,7 +5,7 @@
     <meta name="description" content="hw3 pt commision form for an employer">
     <title>Homework 3: Commission Table</title>
     <link rel="stylesheet" href="hw3pt2.css" />
-     <script src="hw3pt2.js"></script> 
+     
 </head>
 <body>
     <form name="commForm">
@@ -20,8 +20,8 @@
             <input type="number" name="itThree" id="itThree"><br>
             <label for="itFour">Item Four: </label>
             <input type="number" name="itFour" id="itFour"><br>
-            <input type="button" value="Submit" onclick="calcDisplay()">
-            <input type="reset" value="Reset" onclick="location.reload()">
+            <input type="button" value="Submit" id="submit">
+            <input type="reset" value="Reset" id="reset">
 
         <table>
             <tr><th>Item#</th><th>Price</th><th>Qty Sold</th><th>Total</th></tr>
@@ -37,6 +37,7 @@
     </form><br><br>
 
     <a href="hw3.html">Go Back To Homework 3</a>
+    <script src="hw3pt2.js"></script>
     
 </body>
 </html>

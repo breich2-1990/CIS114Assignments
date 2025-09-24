@@ -5,7 +5,9 @@
     <meta name="description" content="Homework 3 Extra Credit Math Game">
     <title>Homework 3: Extra Credit Math Game</title>
     <link rel="stylesheet" href="hw3ec.css">
-    <script>
+
+
+                <script>
     //global
     let rand1, rand2;
 
@@ -74,7 +76,23 @@ function hideDiv(){
     divElement.style.display = 'none';
 }
 
+
+window.onload = function(){
+document.getElementById("submit").addEventListener("click", submit);
+document.getElementById("reset").addEventListener("click", reset);
+
+document.getElementById("yes").addEventListener("click", location.reload);
+document.getElementById("yes").addEventListener("click", reset);
+document.getElementById("no").addEventListener("click", no);
+
+}
+
+
+
+
+
     </script>
+
 </head>
 <body>
 
@@ -83,16 +101,25 @@ function hideDiv(){
             <tr><td><div class="title">Multiplication Game!</div></td></tr>
             <tr><td><div id="question"></div></td></tr>
             <tr><td><label for="answer">Answer: </label><input type="number" name="answer" id="answer"></td></tr>
-            <tr><td><input type="submit" value="Submit" onclick="submit()"><input type="button" value="Reset" onclick="reset()"></td></tr>
+            <tr><td><input type="submit" value="Submit" id="submit"><input type="button" value="Reset" id="reset"></td></tr>
             <tr><td><div id="result"></div></td></tr>
             <tr><td><div id="continue">Do you want to continue?<br>
-                <input type="button" value="yes" onclick="location.reload(); reset()">
-                <input type="button" value="no" onclick="no()"></div>
+                <input type="button" value="yes" id="yes">
+                <input type="button" value="no" id="no"></div>
             </td></tr>
         </table>
 <br><br>
 
     <a href="hw3.html">Go Back To Homework 3</a>
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
