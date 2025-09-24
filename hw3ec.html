@@ -81,8 +81,9 @@ window.onload = function(){
 document.getElementById("submit").addEventListener("click", submit);
 document.getElementById("reset").addEventListener("click", reset);
 
-document.getElementById("yes").addEventListener("click", location.reload);
-document.getElementById("yes").addEventListener("click", reset);
+document.getElementById("yes").addEventListener("click", function(){
+    location.reload();
+});
 document.getElementById("no").addEventListener("click", no);
 
 }
@@ -111,12 +112,6 @@ document.getElementById("no").addEventListener("click", no);
 <br><br>
 
     <a href="hw3.html">Go Back To Homework 3</a>
-
-
-
-
-
-
 
 
 
