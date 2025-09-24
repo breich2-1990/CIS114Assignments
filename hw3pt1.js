@@ -51,5 +51,10 @@ function check(x) { //checks for valid input
     return result;
 }
 
+function clear() {
+    document.getElementById("result").innerHTML = "";
+}
+
 document.getElementById("submit").addEventListener("click", display);
 document.getElementById("reset").addEventListener("click", location.reload);
+document.getElementById("reset").addEventListener("click", clear);
