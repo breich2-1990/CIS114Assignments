@@ -1,0 +1,27 @@
+      body {
+          background-color: rgb(246, 159, 172);
+          color: darkred;
+          font-family: Inconsolata, Arial;
+          white-space: pre-wrap;
+          text-align: center;
+
+      }
+
+      .table-title {
+          font-size: 20px;
+          text-decoration: underline;
+      }
+
+      .hw-link {
+          color: red;
+          display: inline-block;
+          padding: 1px 5px 1px 5px;
+          background-color: rgb(244, 199, 206);
+          text-align: center;
+          text-decoration: underline;
+          border-radius: 3px;
+          border-color: darkred;
+          border-style: solid;
+          font-family: Inconsolata, Arial;
+          font-size: 14px;
+      }

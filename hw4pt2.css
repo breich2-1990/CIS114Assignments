@@ -1,0 +1,37 @@
+      body {
+          text-align: center;
+          font-family: Inconsolata, Arial;
+      }
+
+      .table-title {
+          font-size: 20px;
+          text-decoration: underline;
+      }
+
+      .hw-link {
+          color: red;
+          display: inline-block;
+          padding: 1px 5px 1px 5px;
+          background-color: rgb(244, 199, 206);
+          text-align: center;
+          text-decoration: underline;
+          border-radius: 3px;
+          border-color: darkred;
+          border-style: solid;
+          font-family: Inconsolata, Arial;
+          font-size: 14px;
+      }
+
+      table {
+          margin: auto;
+          border: solid 1px black;
+      }
+
+      tr:nth-child(even) {
+          background-color: rgb(193, 190, 190);
+
+      }
+
+      th {
+          background-color: rgb(184, 16, 16);
+      }
