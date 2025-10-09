@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="description" content="javscript and ajax practice" >
+    <title>Homework 5: part 1</title>
+    <link rel="stylesheet" href="hw5pt1.css" >
+    <script src="hw5pt1.js"></script>
+  </head>
+  <body>
+    <h1>Personal Info</h1>
+    <form id="personalInfo">
+      <label for="name">Full name: </label><input type="text" id="name"><br><br>
+      <input type="radio" id="lessTwentyOne" name="age" value="21 or younger">
+      <label for="lessTwentyOne">Less than 21</label>
+      <input type="radio" id="betTwentOneFifty" name="age" value="between 21 and 50">
+      <label for="betTwentOneFifty">Greater than 21 but under 50</label>
+      <input type="radio" id="greatFifty" name="age" value="50 or older">
+      <label for="greatFifty">Greater than 50</label><br><br>
+
+      <input type="checkbox" id="firefox" name="browser" value="Firefox">
+      <label for="firefox">Firefox</label>
+      <input type="checkbox" id="edge" name="browser" value="Edge">
+      <label for="edge">Edge</label>
+      <input type="checkbox" id="chrome" name="browser" value="Chrome">
+      <label for="chrome">Chrome</label>
+      <input type="checkbox" id="safari" name="browser" value="Safari">
+      <label for="safari">Safari</label><br><br>
+
+      <label for="movieChoice">Choose a type of movie:</label>
+        <select id="movieChoice">
+            <option value="none">Select movie type</option>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Science Fiction">Science Fiction</option>
+        </select>
+        <br><br>
+        <textarea id="result"></textarea>
+        
+        <br><br>
+        <input type="button" id="submit" value="Submit"><input type="reset" id="reset" value="Reset">
+
+    </form>
+     <br>
+
+
+      <a class="hw-link" id="home-link" href="index.html">Go Home</a>
+  </body>
+</html>
