@@ -10,7 +10,7 @@ window.onload = function () {
 
     document.getElementById("input").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
-            event.preventDefault(); // Prevent the default action (form submission or page reload)
+            event.preventDefault();
         }
     });
 }

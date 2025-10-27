@@ -15,7 +15,7 @@ window.onload = function () {
 
     document.getElementById("name").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
-            event.preventDefault(); // Prevent the default action (form submission or page reload)
+            event.preventDefault();
         }
     });
 
