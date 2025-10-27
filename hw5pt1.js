@@ -13,6 +13,12 @@ window.onload = function () {
         location.reload();
     });
 
+    document.getElementById("name").addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault(); // Prevent the default action (form submission or page reload)
+        }
+    });
+
 }
 
 function display() {
