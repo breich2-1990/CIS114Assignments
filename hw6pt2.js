@@ -33,7 +33,7 @@ function calc() {
         document.getElementById("result").innerHTML = strOutFound;
 
     } else {
-
+        //window.open
         document.getElementById("result").innerHTML = "";
 
         strOutNotFound += "<html>\n";
