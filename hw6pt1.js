@@ -35,9 +35,9 @@ function calc() {
         strResult += "The initial number was: " + inputNum + "\n";
         strResult += "The rounded integer is: " + intNum + "\n";
         strResult += "The rounded square root is: " + sqrNum + "\n";
-        strResult += "The tenths place result is: " + tenthsNum.toFixed(1) + "\n";
-        strResult += "The hundredths place result is: " + hunNum.toFixed(2) + "\n";
-        strResult += "The thousandths place result is: " + thouNum.toFixed(3);
+        strResult += "Rounded to the tenths place result is: " + tenthsNum.toFixed(1) + "\n";
+        strResult += "Rounded to the hundredths place result is: " + hunNum.toFixed(2) + "\n";
+        strResult += "Rounded to the thousandths place result is: " + thouNum.toFixed(3);
 
 
         document.getElementById("result").value = strResult;
