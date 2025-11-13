@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="description" content="javscript and ajax practice" >
+    <title>Homework 5: part 1</title>
+    <link rel="stylesheet" href="hw7pt1.css" >
+    <script src="hw7pt1.js"></script>
+  </head>
+  <body>
+
+    <h2>Design Fun</h2><br>
+    <div id="toBeChanged">It was a weird concept. Why would I really need to generate a random paragraph? Could I actually learn something from doing so? All these questions were running through her head as she pressed the generate button. To her surprise, she found what she least expected to see.<br>
+It was difficult for him to admit he was wrong. He had been so certain that he was correct and the deeply held belief could never be shaken. Yet the proof that he had been incorrect stood right before his eyes. "See daddy, I told you that they are real!" his daughter excitedly proclaimed.<br>
+Her eyebrows were a shade darker than her hair. They were thick and almost horizontal, emphasizing the depth of her eyes. She was rather handsome than beautiful. Her face was captivating by reason of a certain frankness of expression and a contradictory subtle play of features. Her manner was engaging.</div><br>
+    <form id="changeForm">
+        <label>
+            <input type="radio" value="purple" name="purple" onclick="switchColor(0)"> purple
+        </label>
+        <label>
+            <input type="radio" value="green" name="green" onclick="switchColor(1)"> green
+        </label>
+        <label>
+            <input type="radio" value="yellow" name="yellow" onclick="switchColor(2)"> yellow
+        </label><br>
+         <label>
+            <input type="checkbox" name="bold" value="bold" onchange="switchBold(this)">
+            Bold
+        </label>
+         <label>
+            <input type="checkbox" name="underlined" value="underlined" onchange="switchUnder(this)">
+            Underlined
+        </label>
+         <label>
+            <input type="checkbox" name="italic" value="italic" onchange="switchIt(this)">
+            Italic
+        </label><br>
+        <label for="fontSize">Choose size:</label><br>
+    <select id="fontSize" name="fontSize" onchange="switchSize(this)">
+        <option value="">select option</option>
+        <option value="oneEm">1 em</option>
+        <option value="onePointFiveEm">1.5 em</option>
+        <option value="twoEm">2 em</option>
+    </select>
+
+        
+    </form>
+
+    <br><br>
+
+
+
+      <a class="hw-link" id="home-link" href="index.html">Go Home</a>
+  </body>
+</html>

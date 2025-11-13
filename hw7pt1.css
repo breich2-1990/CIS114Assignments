@@ -1,0 +1,65 @@
+      body {
+          background-color: rgb(246, 159, 172);
+          color: darkred;
+          font-family: Inconsolata, Arial;
+      }
+
+      .table-title {
+          font-size: 20px;
+          text-decoration: underline;
+      }
+
+      .hw-link {
+          color: red;
+          display: inline-block;
+          padding: 1px 5px 1px 5px;
+          background-color: rgb(244, 199, 206);
+          text-align: center;
+          text-decoration: underline;
+          border-radius: 3px;
+          border-color: darkred;
+          border-style: solid;
+          font-family: Inconsolata, Arial;
+          font-size: 14px;
+      }
+
+      textarea {
+          width: 250px;
+          height: 200px;
+      }
+
+      .purple {
+          background-color: purple;
+      }
+
+      .green {
+          background-color: green;
+      }
+
+      .yellow {
+          background-color: yellow;
+      }
+
+      .fontOneEm {
+          font-size: 1em;
+      }
+
+      .fontOnePointFiveEm {
+          font-size: 1.5em;
+      }
+
+      .fontTwoEm {
+          font-size: 2em;
+      }
+
+      .boldStyle {
+          font-weight: bold;
+      }
+
+      .underStyle {
+          text-decoration-line: underline;
+      }
+
+      .italicStyle {
+          font-style: italic;
+      }

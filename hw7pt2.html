@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="javscript and ajax practice">
+  <title>Homework 7: part 2</title>
+  <link rel="stylesheet" href="hw5pt1.css">
+  <script>
+
+    function register(name, username) { // Use a clear name like inputValue
+      // 1. Create an expiration date 1 year from now
+      const expirationDate = new Date();
+      expirationDate.setFullYear(expirationDate.getFullYear() + 1);
+      const expires = "expires=" + expirationDate.toUTCString();
+
+      // 2. Set both cookies with the path and the expiry date for persistence
+      document.cookie = "name=" + encodeURIComponent(name) + "; path=/";
+      document.cookie = "username=" + encodeURIComponent(username) + "; path=/";
+
+      // adding this line below to debug
+      console.log("Cookies set! Current document.cookie string:" + document.cookie);
+    }
+
+
+    function getCookie(cookie_name) {
+      var search_cookie = cookie_name + "="
+      if (document.cookie.length > 0) {
+        start_position = document.cookie.indexOf(search_cookie)
+        if (start_position != -1) {
+          start_position += search_cookie.length
+          end_position = document.cookie.indexOf(";", start_position)
+          if (end_position == -1)
+            end_position = document.cookie.length
+          return (decodeURIComponent(document.cookie.substring(start_position, end_position)))
+        }
+      }
+      return null;
+    }
+
+    function displayMessage() {
+      var name = getCookie("name");
+      var username = getCookie("username");
+      welcomeMessage = document.getElementById("welcome-message");
+      form = document.getElementById("reg-form");
+
+      if (name && username) {
+        welcomeMessage.innerHTML = "Welcome Back, " + name + " (" + username + ")";
+        form.style.display = "none";
+      } else {
+        welcomeMessage.innerHTML = `<p>You have not been here since the last time you closed your browser...</p>
+  <p>
+    When you return to this page while keeping your browser opened, your name will be displayed with a Welcome message.
+  </p>`
+        form.style.display = "block";
+      }
+
+    }
+
+    window.onload = displayMessage;
+
+  </script>
+</head>
+
+<body>
+  <div id="welcome-message"></div>
+  <form id="reg-form" onsubmit="return false">
+    <label for="name">Enter your name</label>:
+    <br>
+    <input type="text" name="name" id="name" size="40">
+    <br>
+    <label for="username">Enter your username</label>:
+    <br>
+    <input type="text" name="username" id="username" size="40">
+    <br>
+    <input type="button" value="Register Cookie"
+      onclick="register(this.form.name.value, this.form.username.value); history.go(0)">
+  </form>
+  <br>
+  <br>
+
+
+
+  <a class="hw-link" id="home-link" href="index.html">Go Home</a>
+</body>
+
+</html>
