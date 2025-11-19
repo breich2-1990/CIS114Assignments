@@ -15,8 +15,6 @@ th,td {
 <br><br>
 <table id="demo"></table><br><br>
 
-<a class="hw-link" id="home-link" href="index.html">Go Home</a>
-
 <script>
 function loadDoc() {
   const xhttp = new XMLHttpRequest();
@@ -41,6 +39,26 @@ function myFunction(xml) {
 }
 </script>
 
-<h2>explain</h2>
+<h2>Explanation: </h2>
+<p>
+  On this page there are 2 different AJAX calls. First AJAX call is initiated when the user clicks <b>"Get CD collection"</b> button. 
+  The function loadDoc() creates an XMLHttpRequest object and sends an HTTP GET request to cd_catalog.xml.
+  When the browser finishes downloading the XML file, then the onload event calls myFunction(), which reads the CD elements from XML. This extracts the artist and title for each CD.
+  This also helps building an HTML table. Finally the Table is inserted into the page by changing the innerHTML of the element.
+</p>
+
+<br><br>
+<p>Free Jobs API<br>
+This is a FREE API that has 100% reliability!<br>
+Need an area on your page to help others find their next money source? This API has 1 endpoint, with 668 ms response<br>
+time, all through the Rise job listing website source. The endpoint makes a HTTP GET request to retrieve the list.<br>
+It then retrieves a JSON response of multiple job listings, including title, location, and salary. <br>
+<a href="https://www.freepublicapis.com/free-jobs-api">Link to code/key to use API</a><br>
+<a href="https://docs.joinrise.co/?ref=freepublicapis.com">Testing/documentation</a><br>
+<a href="https://joinrise.co/">The website behind the API</a><br></p>
 </body>
+
+
+
+<a class="hw-link" id="home-link" href="index.html">Go Home</a>
 </html>
